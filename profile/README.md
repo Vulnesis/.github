@@ -27,7 +27,8 @@
 |---|---|---|
 | [Code Scanner CLI](https://github.com/Vulnesis/cli) | One binary covering SCA, SAST, secrets, IaC, containers and licences. It proves reachability with tree-sitter call graphs, runs malscan over your installed dependency bytes, enforces quality gates, and emits an AI-BOM and a post-quantum CBOM. Drop it into a pre-commit hook or a CI step. [Docs](https://docs.vulnes.is/cli/) | AGPL-3.0 |
 | [Belai](https://github.com/Vulnesis/belai) | A safer LLM coding harness. Sealed delimiters with a nonce and SHA-256 hash, a security classifier on every untrusted tool result, and fail-closed posture gates, built into the harness. Agents, crews and a shared kanban run on your own machines with no telemetry. [belai.vulnes.is](https://belai.vulnes.is/) | Apache-2.0 |
-| [AI Coding Skills](https://github.com/Vulnesis/pix-ai-coding-assistant) | Pix adds VDB lookups and remediation hints to Claude Code, Cursor, Windsurf, Codex, Gemini CLI and anything else that reads SKILLS.md. Eighteen skills, five subagents and three guard hooks, installed with `vulnetix agent install`. [Docs](https://docs.vulnes.is/pix/) | Apache-2.0 |
+| [Keleustes](https://github.com/Vulnesis/keleustes) | The desktop Software Factory. A native Rust app that is the server for a fleet of Belai hosts: board, checkpoints, workflows, budgets, a vault and an audit trail in one window, with no web console and no sign-in. Hosts join over mutual TLS with a one-time token. In pre-release: binaries for Linux, macOS and Windows are on the releases page. [Docs](https://docs.vulnes.is/keleustes/) | Apache-2.0 |
+| [AI Coding Skills](https://github.com/Vulnesis/pix-ai-coding-assistant) | Strix adds VDB lookups and remediation hints to Claude Code, Cursor, Windsurf, Codex, Gemini CLI and anything else that reads SKILLS.md. Eighteen skills, five subagents and three guard hooks, installed with `vulnetix agent install`. [Docs](https://docs.vulnes.is/strix/) | Apache-2.0 |
 
 ### Standards and public data
 
@@ -40,7 +41,7 @@
 | [TypeScript SDK SSVC](https://github.com/Vulnesis/typescript-ssvc) | The same SSVC scoring in idiomatic TypeScript, with zero dependencies. | MIT |
 | [Breach Notes](https://github.com/Vulnesis/breach-notes) | Curated post-mortems of public breaches as structured YAML records, in plain English. [RSS feed](https://breachnotes.vulnes.is/index.xml) | MIT |
 
-[Pix Sandbox](https://www.vulnes.is/features/pix-sandbox) is Belai hosted by Vulnesis: an isolated machine built from a reproducible Nix image with published SBOMs, for teams that would rather not host Belai themselves.
+[Keleustes Sandbox](https://www.vulnes.is/features/keleustes-sandbox) is the hosted side of Keleustes: Belai on an isolated machine run by Vulnesis, built from a reproducible Nix image with published SBOMs, for teams that would rather not host Belai themselves.
 
 ### Rego rule packs
 
@@ -115,7 +116,8 @@ Everything is at [docs.vulnes.is](https://docs.vulnes.is/). Each page has a Mark
 | [SCA](https://docs.vulnes.is/sca/) · [SAST](https://docs.vulnes.is/sast/) · [Secrets](https://docs.vulnes.is/secrets/) · [IaC scanning](https://docs.vulnes.is/iac-scanning/) · [Malware](https://docs.vulnes.is/malware/) | One section per scanner, with gates, rule catalogues and output formats. |
 | [SBOM, CBOM and AI-BOM](https://docs.vulnes.is/sbom/) · [TEA](https://docs.vulnes.is/tea/) | CycloneDX inventories and the Transparency Exchange API. |
 | [Software Factory](https://docs.vulnes.is/software-factory/) | Workflows, agents, hosts and evidence, and the Belai CLI that runs the work. |
-| [Pix](https://docs.vulnes.is/pix/) · [MCP server](https://docs.vulnes.is/mcp-server/) | Vulnesis inside coding agents and any MCP client. |
+| [Keleustes](https://docs.vulnes.is/keleustes/) | The desktop app: install, connect Belai hosts, every screen and the CLI. Keleustes Sandbox, the hosted machines, is covered in the same section. |
+| [Strix](https://docs.vulnes.is/strix/) · [MCP server](https://docs.vulnes.is/mcp-server/) | Vulnesis inside coding agents and any MCP client. |
 | [VS Code extension](https://docs.vulnes.is/vscode/) · [Browser extension](https://docs.vulnes.is/browser-extension/) | Editor and browser setup. |
 | [VDB API](https://docs.vulnes.is/vdb-api/) | Authentication, rate limits and every v2 route. |
 
